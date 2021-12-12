@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+:root {
+  /* Color */
+
+  --red-text: #ce9797;
+  --alert-text: #f96262;
+
+  --neutral-text: #413a3a;
+
+  /* Gradients */
+
+  --background-page: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%) 0%,
+    hsl(0, 100%, 98%) 100%
+  );
+
+  --background-btn: linear-gradient(
+    135deg,
+    hsl(0, 80%, 86%) 0%,
+    hsl(0, 74%, 74%) 100%
+  );
+
+  /* Weight */
+  --light: 300;
+  --bold: 600;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+body {
+  height: 100vh;
+  background: var(--background-page);
+}
+
+.container {
+  width: 100%;
+  max-width: 375px;
+  margin: auto;
+}
+
+/* HEADER */
+
+.header {
+  width: 43%;
+  margin: 0.8rem;
+  padding: 1.1rem 0.8rem;
+}
+
+.logo {
+  width: 70%;
+}
+
+/* IMAGE */
+
+.main-img {
+  width: 100%;
+}
+
+/* CONTENT */
+
+.content {
+  margin: 3rem 2.5rem;
+}
+
+.main_title {
+  text-align: center;
+  margin-bottom: 1.3rem;
+}
+
+.main_title p {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: var(--bold);
+  letter-spacing: 0.6rem;
+  color: var(--neutral-text);
+}
+
+.main_title p:first-child {
+  font-weight: var(--light);
+  color: var(--red-text);
+}
+
+.content_text {
+  text-align: center;
+}
+
+.content_text p {
+  font-size: 0.88rem;
+  color: var(--red-text);
+}
+
+form {
+  margin: 3rem auto;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  padding: 0.9rem 1.4rem;
+  font-size: 0.75rem;
+  border-radius: 3rem;
+  border: 1px solid var(--red-text);
+}
+
+input[type="email"] {
+  opacity: 0.5;
+}
+
+input::placeholder {
+  color: var(--red-text);
+}
+
+.form-btn {
+  position: relative;
+  z-index: 2;
+  margin-left: -3.55rem;
+}
+
+.btn {
+  width: 3.5rem;
+  opacity: 1;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  border: none;
+  background: var(--background-btn);
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
