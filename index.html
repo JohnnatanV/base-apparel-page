@@ -31,7 +31,8 @@
         <img src="assets/images/logo.svg" alt="" class="logo" />
       </header>
       <div class="img_container">
-        <img src="assets/images/hero-mobile.jpg" alt="" class="main-img" />
+        <img src="assets/images/hero-mobile.jpg" alt="" class="mobile-img" />
+        <img src="assets/images/hero-desktop.jpg" alt="" class="desktop-img" />
       </div>
       <main class="content">
         <div class="main_title">
@@ -46,14 +47,20 @@
             and our launch deals.
           </p>
         </div>
-        <form action="" class="form" id="form">
+        <form action="" class="form" id="form" onsubmit="return false;">
           <input type="email" name="" id="email" placeholder="Email Address" />
           <div class="form-btn">
             <button class="btn">
               <img src="assets/images/icon-arrow.svg" alt="" class="btn-img" />
             </button>
           </div>
+          <div class="error" id="error">
+            <img src="assets/images/icon-error.svg" alt="" class="error-img" />
+          </div>
         </form>
+        <div class="error-text" id="error-text">
+          <p>Please provide a valid email</p>
+        </div>
       </main>
     </div>
     <footer>
