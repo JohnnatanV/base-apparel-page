@@ -132,11 +132,12 @@ input:focus:valid {
 }
 
 input:focus:invalid {
+  outline-width: 1.1px;
   outline-color: var(--alert-text);
 }
 
 input[type="email"] {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 input::placeholder {
@@ -171,16 +172,18 @@ input::placeholder {
 /* ERROR */
 
 .error {
-  visibility: hidden;
   position: relative;
   z-index: 1;
   margin-left: -7rem;
 }
 
 .error-text {
-  visibility: hidden;
   margin-top: 1rem;
   margin-left: 1rem;
+}
+
+.error-state {
+  visibility: hidden;
 }
 
 .error-text p {
@@ -249,7 +252,7 @@ footer {
 
   .main_title {
     text-align: left;
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
   }
 
   .main_title p {
@@ -260,7 +263,7 @@ footer {
 
   .content_text {
     text-align: left;
-    margin-top: 1.9rem;
+    margin-top: 2.9rem;
   }
 
   .content_text p {
